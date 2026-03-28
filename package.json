@@ -9,9 +9,16 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc && node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run"
   },
-  "keywords": ["mcp", "security", "ai-safety", "prompt-injection", "agentshield", "model-context-protocol"],
+  "keywords": [
+    "mcp",
+    "security",
+    "ai-safety",
+    "prompt-injection",
+    "agentshield",
+    "model-context-protocol"
+  ],
   "author": "Damon McDougald <doogie-bigmack>",
   "license": "MIT",
   "type": "commonjs",
@@ -21,6 +28,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
   }
 }

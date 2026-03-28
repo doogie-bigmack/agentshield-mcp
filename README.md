@@ -1,5 +1,7 @@
 # AgentShield MCP Server
 
+[![Build & Test](https://github.com/doogie-bigmack/agentshield-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/doogie-bigmack/agentshield-mcp/actions/workflows/ci.yml)
+
 Expose [AgentShield](https://agentshield.io) security scanning as MCP (Model Context Protocol) tools. Any MCP-compatible AI client can scan prompts, outputs, tools, and MCP servers for security threats.
 
 ## Quick Start
@@ -63,11 +65,20 @@ Add to your MCP config:
 | `scan_pii` | Scan text for PII (emails, SSNs, credit cards) |
 | `scan_memory` | Scan agent memory stores for poisoned data |
 
+## Testing
+
+```bash
+npm test         # Run integration tests (vitest)
+```
+
+Tests mock the AgentShield API client and verify all 10 MCP tools call the correct endpoints with the correct parameters. No live API connection needed.
+
 ## Development
 
 ```bash
 npm run build    # Compile TypeScript
 npm run dev      # Build + run
+npm test         # Run tests
 ```
 
 ## License
