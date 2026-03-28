@@ -1,7 +1,7 @@
 {
   "name": "agentshield-mcp",
   "version": "1.0.0",
-  "description": "",
+  "description": "MCP server for AgentShield AI security scanning — scan prompts, outputs, tools, and MCP servers for threats",
   "main": "dist/index.js",
   "bin": {
     "agentshield-mcp": "dist/index.js"
@@ -11,9 +11,9 @@
     "dev": "tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["mcp", "security", "ai-safety", "prompt-injection", "agentshield", "model-context-protocol"],
+  "author": "Damon McDougald <doogie-bigmack>",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.28.0",
